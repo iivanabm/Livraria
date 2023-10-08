@@ -1,0 +1,3 @@
+1; Cálculo 1; 89.90; true; James Stewart; Pearson
+1; Cálculo 2; 89.90; true; James Stewart; Pearson
+1; Cálculo 3; 89.90; true; James Stewart; Pearson

@@ -1,0 +1,4 @@
+C; Pedido 1; Ana Maria; 36985471236; maria.ana@gmail.com
+L; 1; Algebra Linear; 150; false; Howard Anton; Bookman
+M; 2; Mochila couro; 199.90; Novva; preto; false
+CA; 1; Caderno Vigadores; 25.90; 1; true; Tilibra
