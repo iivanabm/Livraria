@@ -19,6 +19,7 @@
                     <th>Nome</th>
                     <th>CPF</th>
                     <th>E-mail</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -27,6 +28,7 @@
                     <td>${cliente.nome}</td>
                     <td>${cliente.cpf}</td>
                     <td>${cliente.email}</td>
+                    <td><a href="/cliente/${cliente.cpf}/excluir">Excluir</a> </td>
                 </tr>
             </c:forEach>
             </tbody>

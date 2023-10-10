@@ -6,8 +6,7 @@
     <head>
         <meta charset="ISO-8859-1">
         <title>Livraria</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    </head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"></head>
     <body>
 
         <c:import url="/WEB-INF/jsp/menu.jsp" />
