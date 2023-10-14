@@ -3,14 +3,14 @@ package com.projeto.livraria.controller;
 import com.projeto.livraria.model.Usuario;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
+@SessionAttributes("usuario")
 @Controller
 public class UsuarioController {
 
@@ -48,6 +48,35 @@ public class UsuarioController {
     public String incluirUsuario(Usuario usuario) {
         incluir(usuario);
         return "redirect:/";
+    }
+
+    @GetMapping(value = "/usuario/cadastro")
+    public String irParaTelaCadastro() {
+
+        return "usuario/cadastro";
+    }
+
+    public Usuario validar(String email, String senha) {
+        Usuario usuario = usuarioMap.get(email);
+
+        if (!Objects.isNull(usuario) && senha.equalsIgnoreCase(usuario.getSenha())) {
+            return usuario;
+        }
+
+        return null;
+    }
+
+    @PostMapping(value = "/validar")
+    public String validarLogin(Model model, @RequestParam String email, @RequestParam String senha) {
+
+        Usuario usuario = validar(email, senha);
+
+        if (!Objects.isNull(usuario)) {
+            model.addAttribute("usuario", usuario);
+
+            return "home";
+        }
+        return "redirect:/login";
     }
 
 }
