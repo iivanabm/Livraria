@@ -1,10 +1,20 @@
 package com.projeto.livraria.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "mochila")
 public class Mochila extends Produto {
 
+    @Column(name = "marca")
     private String marca;
+
+    @Column(name = "cor")
     private String cor;
 
+    @Column(name = "escolar")
     private boolean escolar;
 
     public Mochila() {

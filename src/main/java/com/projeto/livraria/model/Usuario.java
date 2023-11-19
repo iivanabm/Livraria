@@ -1,9 +1,21 @@
 package com.projeto.livraria.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "usuario")
 public class Usuario {
 
+    @Column(name = "nome")
     private String nome;
+    @Column(name = "senha")
     private String senha;
+
+    @Id
+    @Column(name = "email")
     private String email;
 
     public Usuario() {}

@@ -34,10 +34,10 @@
 
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/usuario/cadastro"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
-                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span>Login: ${usuario.nome}</a></li>
-            </ul>
+<%--            <ul class="nav navbar-nav navbar-right">--%>
+<%--                <li><a href="/usuario/cadastro"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>--%>
+<%--                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span>Login: ${usuario.nome}</a></li>--%>
+<%--            </ul>--%>
 
         </div>
 

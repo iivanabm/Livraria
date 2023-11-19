@@ -1,9 +1,21 @@
 package com.projeto.livraria.model;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 public abstract class Produto {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "codigo")
     private Integer codigo;
+
+    @Column(name = "nome")
     private String nome;
+
+    @Column(name = "valor")
     private float valor;
 
     public Produto() {}

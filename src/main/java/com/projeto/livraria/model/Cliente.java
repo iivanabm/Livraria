@@ -12,8 +12,11 @@ public class Cliente {
     @Id
     @Column(name = "cpf")
     private String cpf;
+
+    @Column(name = "nome")
     private String nome;
 
+    @Column(name = "email")
     private String email;
 
     public Cliente() {}
